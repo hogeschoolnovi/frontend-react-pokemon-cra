@@ -1,0 +1,26 @@
+.nav-buttons button {
+    border-style: none;
+    border-radius: 4px;
+    height: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nav-buttons button.previous span {
+    margin-left: -0.5rem;
+}
+
+.nav-buttons button.next span {
+    margin-right: -0.5rem;
+}
+
+.nav-buttons button span {
+    display: flex;
+    align-items: center;
+}
+
+.nav-buttons button:disabled {
+    background-color: yellow;
+}
