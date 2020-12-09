@@ -1,3 +1,4 @@
+import { Equalizer, FitnessCenter, FlashOn } from '@material-ui/icons';
 import Axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import './Pokemon.css';
@@ -22,22 +23,25 @@ export const Pokemon = ({ name }) => {
     return (
         <div class="pokemon-card">
             {pokemonDetails ? (
-                <ul>
-                    <li><h3>{pokemonDetails.name}</h3></li>
-                    <li><img src={pokemonDetails.sprites.front_default} alt={`Afbeelding ${pokemonDetails.name}`} /></li>
-                    <li>Moves: {pokemonDetails.moves.length}</li>
-                    <li>Weight: {pokemonDetails.weight}</li>
-                    <li>Abilities:
-                        <ul>
-                            {pokemonDetails.abilities.map(({ ability }) => (
-                                <li>{ability.name}</li>
-                            ))}
-                        </ul>
-                    </li>
-
-                </ul>
+                <div>
+                    <ul>
+                        <li><h3>{pokemonDetails.name}</h3></li>
+                        <li className="image"><img
+                            src={pokemonDetails.sprites.front_default}
+                            alt={`Afbeelding ${pokemonDetails.name}`}
+                        /></li>
+                        <li><h4>Moves: </h4>{pokemonDetails.moves.length}</li>
+                        <li><h4>Weight: </h4>{pokemonDetails.weight}</li>
+                    </ul>
+                    <ul className="abilities">
+                        <li><h4><Equalizer />Abilities</h4></li>
+                        {pokemonDetails.abilities.map(({ ability }) => (
+                            <li>{ability.name}</li>
+                        ))}
+                    </ul>
+                </div>
             ) : (
-                    <span>loading...</span>
+                    <span className="loading">loading...</span>
                 )
             }
         </div>

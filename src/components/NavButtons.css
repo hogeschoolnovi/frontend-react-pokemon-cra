@@ -1,4 +1,12 @@
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
 .nav-buttons button {
+    background-color: #fdfcf1;
+    margin: 0 20px;
     border-style: none;
     border-radius: 4px;
     height: 40px;
@@ -22,5 +30,5 @@
 }
 
 .nav-buttons button:disabled {
-    background-color: yellow;
+    opacity: 0.5;
 }

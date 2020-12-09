@@ -3,6 +3,7 @@ import Axios from 'axios';
 import { Pokemon } from './components/Pokemon';
 import './App.css';
 import { NavButtons } from './components/NavButtons';
+import logo from './assets/pokemon-logo.png';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
 
   return (
     <>
+      <header><img alt="pokemon-logo" src={logo} /></header>
       <NavButtons previousUrl={previousUrl} nextUrl={nextUrl} setUrl={setUrl} />
       <ul class="pokemon-list">
         {pokimons ? pokimons.results.map(({ name }) => (
