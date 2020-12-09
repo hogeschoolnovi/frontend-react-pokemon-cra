@@ -1,4 +1,4 @@
-import { Equalizer, FitnessCenter, FlashOn } from '@material-ui/icons';
+import { Equalizer } from '@material-ui/icons';
 import Axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import './Pokemon.css';

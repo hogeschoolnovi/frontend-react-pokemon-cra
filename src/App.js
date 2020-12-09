@@ -13,7 +13,6 @@ function App() {
   const [url, setUrl] = useState('https://pokeapi.co/api/v2/pokemon?limit=20&offset=0');
 
   useEffect(() => {
-    // setPokimons(null);
 
     async function fetchPokimonList() {
       try {
@@ -21,7 +20,6 @@ function App() {
         setPreviousUrl(result.data.previous);
         setNextUrl(result.data.next);
         setPokimons(result.data);
-        // console.log(result.data);
       } catch (error) {
         console.error(error);
       }
