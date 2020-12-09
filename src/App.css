@@ -21,6 +21,12 @@ header {
     justify-content: center;
 }
 
+header img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
 .pokemon-list {
     list-style: none;
     display: flex;
