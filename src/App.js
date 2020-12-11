@@ -4,7 +4,7 @@ import { Pokemon } from './components/Pokemon';
 import './App.css';
 import { NavButtons } from './components/NavButtons';
 import logo from './assets/pokemon-logo.png';
-//TEST
+
 function App() {
 
   const [pokimons, setPokimons] = useState(null);
