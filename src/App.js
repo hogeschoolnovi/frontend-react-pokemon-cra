@@ -41,6 +41,7 @@ function App() {
             <h1>loading...</h1>
           )}
       </ul>
+      <NavButtons previousUrl={previousUrl} nextUrl={nextUrl} setUrl={setUrl} />
     </>
   )
 }
