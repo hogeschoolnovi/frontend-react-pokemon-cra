@@ -6,7 +6,7 @@ export const NavButtons = ({ previousUrl, nextUrl, setUrl }) => {
     return (
         <div className="nav-buttons">
             <button type="button" className="previous"
-                disabled={!previousUrl && true}
+                disabled={!previousUrl}
                 onClick={() => {
                     if (previousUrl) {
                         setUrl(previousUrl);
@@ -15,7 +15,7 @@ export const NavButtons = ({ previousUrl, nextUrl, setUrl }) => {
                 <span><ChevronLeft />Vorige</span>
             </button>
             <button type="button" className="next"
-                disabled={!nextUrl && true}
+                disabled={!nextUrl}
                 onClick={() => {
                     if (nextUrl) {
                         setUrl(nextUrl);
