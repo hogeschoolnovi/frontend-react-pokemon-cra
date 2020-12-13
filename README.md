@@ -47,4 +47,4 @@ _Ditto_ (endpoint: `https://pokeapi.co/api/v2/pokemon/ditto`). Wat moet je hierv
 4. Ga nu eens kijken hoe je een lijst van 20 pokémon namen kunt ophalen in `App.js`. Welk endpoint heb je dan nodig?
 5. Map over deze resultaten heen en render voor elk resultaat een pokémon op de pagina!
 6. Maak twee knoppen en bekijk de documentatie voor het ophalen van een lijst van pokémons nog eens goed. Wanneer de gebruiker op 'volgende' klikt, willen we een nieuw request doen naar een nieuw endpoint. 
-En we willen dat het ophalen van data getriggerd wordt, wanneer het endpoint wordt veranderd.
+En we willen dat het ophalen van data getriggerd wordt, wanneer het endpoint wordt veranderd."# pokemon-react-app" 

@@ -1,0 +1,11 @@
+body {
+    margin: 25px;
+    padding: 0;
+    background-color: #FFCB05;
+}
+img {
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
