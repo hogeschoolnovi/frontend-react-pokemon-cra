@@ -11,7 +11,7 @@ export const Pokemon = ({ name }) => {
         async function fetchData() {
             try {
                 const result = await Axios.get(`https://pokeapi.co/api/v2/pokemon/${name}`);
-                console.log(result.data);
+                // console.log(result.data);
                 setPokemonDetails(result.data);
             } catch (error) {
                 console.error(error);
@@ -21,7 +21,7 @@ export const Pokemon = ({ name }) => {
     }, [name]);
 
     return (
-        <div class="pokemon-card">
+        <div className="pokemon-card">
             {pokemonDetails ? (
                 <div>
                     <ul>
@@ -36,7 +36,7 @@ export const Pokemon = ({ name }) => {
                     <ul className="abilities">
                         <li><h4><Equalizer />Abilities</h4></li>
                         {pokemonDetails.abilities.map(({ ability }) => (
-                            <li>{ability.name}</li>
+                            <li key={ability.name}>{ability.name}</li>
                         ))}
                     </ul>
                 </div>

@@ -8,8 +8,8 @@ import logo from './assets/pokemon-logo.png';
 function App() {
 
   const [pokimons, setPokimons] = useState(null);
-  const [previousUrl, setPreviousUrl] = useState(null);
-  const [nextUrl, setNextUrl] = useState(null);
+  // const [previousUrl, setPreviousUrl] = useState(null);
+  // const [nextUrl, setNextUrl] = useState(null);
   const [url, setUrl] = useState('https://pokeapi.co/api/v2/pokemon?limit=20&offset=0');
 
   useEffect(() => {
@@ -17,8 +17,8 @@ function App() {
     async function fetchPokimonList() {
       try {
         const result = await Axios.get(url);
-        setPreviousUrl(result.data.previous);
-        setNextUrl(result.data.next);
+        // setPreviousUrl(result.data.previous);
+        // setNextUrl(result.data.next);
         setPokimons(result.data);
       } catch (error) {
         console.error(error);
@@ -31,8 +31,8 @@ function App() {
   return (
     <>
       <header><img alt="pokemon-logo" src={logo} /></header>
-      <NavButtons previousUrl={previousUrl} nextUrl={nextUrl} setUrl={setUrl} />
-      <ul class="pokemon-list">
+      { pokimons && <NavButtons previousUrl={pokimons.previous} nextUrl={pokimons.next} setUrl={setUrl} />}
+      <ul className="pokemon-list">
         {pokimons ? pokimons.results.map(({ name }) => (
           <li key={name}>
             <Pokemon name={name} />
@@ -41,7 +41,7 @@ function App() {
             <h1>loading...</h1>
           )}
       </ul>
-      <NavButtons previousUrl={previousUrl} nextUrl={nextUrl} setUrl={setUrl} />
+      { pokimons && <NavButtons previousUrl={pokimons.previous} nextUrl={pokimons.next} setUrl={setUrl} />}
     </>
   )
 }
