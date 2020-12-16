@@ -8,8 +8,6 @@ import logo from './assets/pokemon-logo.png';
 function App() {
 
   const [pokimons, setPokimons] = useState(null);
-  // const [previousUrl, setPreviousUrl] = useState(null);
-  // const [nextUrl, setNextUrl] = useState(null);
   const [url, setUrl] = useState('https://pokeapi.co/api/v2/pokemon?limit=20&offset=0');
 
   useEffect(() => {
@@ -17,8 +15,6 @@ function App() {
     async function fetchPokimonList() {
       try {
         const result = await Axios.get(url);
-        // setPreviousUrl(result.data.previous);
-        // setNextUrl(result.data.next);
         setPokimons(result.data);
       } catch (error) {
         console.error(error);
