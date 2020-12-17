@@ -5,23 +5,28 @@ import './NavButtons.css';
 export const NavButtons = ({ previousUrl, nextUrl, setUrl }) => {
     return (
         <div className="nav-buttons">
-            <button type="button" className="previous"
+            <button
+                type="button"
+                className="previous"
                 disabled={!previousUrl}
                 onClick={() => {
-                    if (previousUrl) {
-                        setUrl(previousUrl);
-                    }
+                    setUrl(previousUrl);
                 }}>
-                <span><ChevronLeft />Vorige</span>
+                <div>
+                    <ChevronLeft /><span>Vorige</span>
+                </div>
             </button>
-            <button type="button" className="next"
+            <button
+                type="button"
+                className="next"
                 disabled={!nextUrl}
                 onClick={() => {
-                    if (nextUrl) {
-                        setUrl(nextUrl);
-                    }
+                    setUrl(nextUrl);
                 }}
-            ><span>Volgende<ChevronRight /></span>
+            >
+                <div>
+                    <span>Volgende</span><ChevronRight />
+                </div>
             </button>
         </div>
     )

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Axios from 'axios';
+import axios from 'axios';
 import { Pokemon } from './components/Pokemon';
 import './App.css';
 import { NavButtons } from './components/NavButtons';
@@ -7,15 +7,15 @@ import logo from './assets/pokemon-logo.png';
 
 function App() {
 
-  const [pokimons, setPokimons] = useState(null);
+  const [pokemons, setPokemons] = useState(null);
   const [url, setUrl] = useState('https://pokeapi.co/api/v2/pokemon?limit=20&offset=0');
 
   useEffect(() => {
 
     async function fetchPokimonList() {
       try {
-        const result = await Axios.get(url);
-        setPokimons(result.data);
+        const result = await axios.get(url);
+        setPokemons(result.data);
       } catch (error) {
         console.error(error);
       }
@@ -26,10 +26,12 @@ function App() {
 
   return (
     <>
-      <header><img alt="pokemon-logo" src={logo} /></header>
-      { pokimons && <NavButtons previousUrl={pokimons.previous} nextUrl={pokimons.next} setUrl={setUrl} />}
+      <header>
+        <img alt="pokemon-logo" src={logo} />
+      </header>
+      { pokemons && <NavButtons previousUrl={pokemons.previous} nextUrl={pokemons.next} setUrl={setUrl} />}
       <ul className="pokemon-list">
-        {pokimons ? pokimons.results.map(({ name }) => (
+        {pokemons ? pokemons.results.map(({ name }) => (
           <li key={name}>
             <Pokemon name={name} />
           </li>
@@ -37,7 +39,7 @@ function App() {
             <h1>loading...</h1>
           )}
       </ul>
-      { pokimons && <NavButtons previousUrl={pokimons.previous} nextUrl={pokimons.next} setUrl={setUrl} />}
+      { pokemons && <NavButtons previousUrl={pokemons.previous} nextUrl={pokemons.next} setUrl={setUrl} />}
     </>
   )
 }

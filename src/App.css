@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+#root {
+    max-width: 1220px;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
     display: flex;
@@ -12,9 +16,6 @@ body {
     background-color: #032B43;
 }
 
-#root {
-    max-width: 1220px;
-}
 
 header {
     display: flex;
@@ -22,13 +23,12 @@ header {
 }
 
 header img {
-    width: 100%;
     max-width: 700px;
     height: auto;
 }
 
 .pokemon-list {
-    list-style: none;
+    list-style-type: none;
     display: flex;
     flex-wrap: wrap;
 }

@@ -21,7 +21,7 @@
 }
 
 .pokemon-card ul {
-    list-style: none;
+    list-style-type: none;
 }
 
 .pokemon-card ul.abilities {
@@ -30,13 +30,6 @@
     flex-direction: column;
     align-items: center;
     margin-top: 1rem;
-}
-
-.pokemon-card ul ul li {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
 }
 
 .pokemon-card ul li {
@@ -57,7 +50,6 @@
     display: inline;
     font-weight: bold;
 }
-
 
 .pokemon-card h4 svg {
     margin-bottom: -4px;

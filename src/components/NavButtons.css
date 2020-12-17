@@ -17,15 +17,19 @@
     cursor: pointer;
 }
 
-.nav-buttons button.previous span {
-    margin-left: -0.5rem;
+.nav-buttons button.previous div {
+    padding-right: 6px;
 }
 
-.nav-buttons button.next span {
-    margin-right: -0.5rem;
+.nav-buttons button.next div {
+    padding-left: 6px;
 }
 
 .nav-buttons button span {
+    float: left;
+}
+
+.nav-buttons button div {
     display: flex;
     align-items: center;
 }
