@@ -1,0 +1,35 @@
+#parent {
+  display: flex;
+}
+#parent > ul{
+  list-style-type: disc;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+  list-style-position: inside;
+}
+#parent > ul > li:first-child{
+  margin-top: 0px;
+}
+#parent > ul > li h2{
+  margin-top: 0px;
+}
+#parent > ul > li{
+  break-inside: avoid-column;
+}
+.w-100{
+  width: 100%;
+}
+#root{
+  display: flex;
+  list-style-type: none;
+}
+.Pokemon-card{
+  padding: 20px;
+  margin: 5px;
+  list-style-type: none;
+  flex: 1;
+  /* Grow to rest of container */
+  background: lightgreen;
+  /* Just so it's visible */
+}

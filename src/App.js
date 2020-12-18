@@ -1,11 +1,18 @@
-import React from 'react';
 import './App.css';
+import Decrementer from './components/decrementer';
+import Incrementer from './components/incrementer';
+import CounterContextProvider from './context/CounterContextProvider';
+import Result from './components/result';
 
 function App() {
   return (
-    <div>
-      Begin hier met de opdracht!
-    </div>
+      <div className="w-100">
+          <CounterContextProvider>
+              <Decrementer />
+              <Incrementer />
+              <Result />
+          </CounterContextProvider>
+      </div>
   );
 }
 
