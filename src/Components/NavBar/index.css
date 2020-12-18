@@ -1,0 +1,35 @@
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-inline-start: 0;
+    margin: 0;
+}
+
+#poke-logo{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    display: block;
+
+}
+
+.nav-button{
+    background-color: #F6CC28;
+    border: #4070b5 5px solid;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.navbar-container{
+    background-color: #F6CC28;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px 10px 20px;
+
+}
+

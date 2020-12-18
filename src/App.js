@@ -1,11 +1,25 @@
 import React from 'react';
 import './App.css';
+import Pokedex from './Components/Pokedex/index'
+import NavBar from "./Components/NavBar";
+import PokedexContextProvider from "./PokedexContext";
+
+
+
 
 function App() {
+
+
+
   return (
-    <div>
-      Begin hier met de opdracht!
-    </div>
+      <>
+          <PokedexContextProvider>
+              <body>
+                  <NavBar/>
+                  <Pokedex/>
+              </body>
+          </PokedexContextProvider>
+      </>
   );
 }
 

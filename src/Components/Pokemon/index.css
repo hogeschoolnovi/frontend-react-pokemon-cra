@@ -1,0 +1,81 @@
+.pokemon-card{
+    border-radius: 20px;
+    background-color: #f6d779;
+    margin: 10px;
+    width: 150px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+
+    box-shadow: 1px 2px black;
+    border: 2px black solid;
+
+    padding: 5px;
+}
+
+.pokemon-name{
+    background-color: #f5f5bd;
+    text-transform: uppercase;
+    text-align: center;
+    width: 70%;
+    padding: 8px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    box-shadow: 1px 2px black;
+    border-radius: 5px;
+    border: 2px black solid;
+}
+
+.pokemon-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pokemon-stats-container{
+    background-color: #f5f5bd;
+    width: 90%;
+    padding: 2px;
+    border-radius: 5px;
+    border: 2px black solid;
+    box-shadow: 1px 2px black;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+
+.pokemon-stats{
+    background-color: #f4f0bf;
+    width: content-box;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px;
+    border-bottom: black 1px dashed;
+
+}
+
+.pokemon-ability-list {
+    list-style: none;
+    padding-inline-start: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+
+}
+
+.pokemon-ability-list p {
+    padding-inline-start: 0;
+    text-align: center;
+
+}
+
+.pokemon-ability-list li {
+    border-radius: 10px;
+    background-color: #ffcb89;
+    padding: 5px;
+    text-align: center;
+    margin-top: 5px;
+    border: 2px black solid;
+    box-shadow: 1px 2px black;
+}
