@@ -16,6 +16,7 @@ function App() {
             setUpOrDown(upOrDown - 1);
         }
     }
+
     function next() {
         if (upOrDown < 0) {
             setUpOrDown(1)

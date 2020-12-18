@@ -1,13 +1,11 @@
 import React from 'react';
 
-function Button({children, onClick, pokemonUrl}) {
+function Button({children, onClick }) {
 
     return (
         <button
             type="button"
-            onClick={onClick}
-            disabled={pokemonUrl}
-        >
+            onClick={onClick}>
             {children}
         </button>)
 }

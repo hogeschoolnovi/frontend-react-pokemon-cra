@@ -6,7 +6,6 @@ import PokemonCard from "../pokemonCard/";
 function PokemonList({previousOrNext}){
 
     const [pokemon,setPokemon] = useState(null);
-    console.log("uod--> ", previousOrNext);
     useEffect( () => {
         async function fetchPokemon(url) {
             try {
