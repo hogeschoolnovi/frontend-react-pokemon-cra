@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+*{
+    margin: 5px;
+    padding: 0;
+}
+body{
+    background-color: #ffc74a;
+}
+header {
+    height: auto;
+    width: auto;
+    margin-bottom: 30px;
+}
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:auto;
+    width:25%;
+    position: relative;
+}
+.pageButtons{
+    display: flex;
+    justify-content: center;
+}
+.pageButton1, .pageButton2{
+    background: #004E99;
+    color: white;
+    font-family: Arial;
+    font-weight: bolder;
+    padding: 10px 22px;
+    margin: 20px;
+    cursor:pointer ;
+    font-size: 100%;
+    width: 110px;
+
+}
+.App {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px;
+}
+button:disabled{
+    opacity: 20%
+}
+.pokemonCard {
+    padding: 10px;
+    border: 1px solid #004E99;
+    background-color: white;
+    text-align: center;
+    flex:18%;
+    box-sizing: border-box;
+    height: auto;
+    box-shadow: black  2px 1px 0 0;
+    border-radius: 5%;
+    margin: 15px;
+}
+.pokemonCard h1{
+    font-size: 30px;
+    font-family: "Nunito Sans";
+    text-transform: capitalize;
+    color: #004E99;
+}
+.pokemonCard h3{
+    font-family: "Nunito Sans";
+    font-weight: normal;
+    font-size: 18px;
+    margin: 10px;
+    color: #004E99;
+}
+.abilitiesButton{
+    padding:5px;
+    margin:10px;
+    text-transform: capitalize;
+    display: block;
+    border:3px solid #004E99;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #004E99;
+
+}
+
+img {
+    width: 30%;
+    height: auto;
+}
