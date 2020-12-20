@@ -1,0 +1,26 @@
+.card-container{
+    width: 165px;
+    background-color: darkblue;
+    border: 1px black solid;
+    border-radius: 12px;
+    box-shadow: 12px 12px 6px lightslategrey;
+}
+
+
+.card {
+    background-color: darkblue;
+    text-transform: capitalize;
+    width: 150px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sprite {
+    height: 96px;
+    width: 96px;
+}
+
+
