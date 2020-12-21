@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#pokemonlogo{
+    width: 500px;
+}
+
+body {
+    background-color: #E5C3D1;
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#nav-buttons {
+    display: flex;
+    padding:2px;
+    margin: 2px;
+}
+
+button:enabled {
+    background-color: #7D82B8;
+    color: #F7A9A8;
+    margin: 2px;
+}
+button:enabled:hover {
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: grey;
+    margin: 2px;
+}
+
+.pokemon-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
