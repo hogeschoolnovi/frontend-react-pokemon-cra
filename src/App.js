@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import './App.css';
 import PokemonList from "./components/pokemonList/PokemonList";
 import ButtonBar from "./components/buttonBar/ButtonBar";
-import logo from "./assets/Pokemon-Logo-PNG4.png"
+import logo from "./assets/Pokemon-Logo-PNG4.png";
 import Button from "./components/button/Button";
 
 function App() {

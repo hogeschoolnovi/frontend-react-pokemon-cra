@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import "./index.css"
+import "./PokemonCard.css"
 import axios from "axios";
 
 
